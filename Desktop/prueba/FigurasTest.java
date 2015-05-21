@@ -73,45 +73,7 @@ public class CuadradoTest {
     }
 }
 
-package figuras;
 
-import org.junit.After;
-import org.junit.AfterClass;
-import org.junit.Before;
-import org.junit.BeforeClass;
-import org.junit.Test;
-import static org.junit.Assert.*;
-
-/**
- *
- * @author Rectangulo
- */
-public class RectanguloTest {
-    
-    public RectanguloTest() {
-    }
-    
-    @BeforeClass
-    public static void setUpClass() {
-    }
-    
-    @AfterClass
-    public static void tearDownClass() {
-    }
-    
-    @Before
-    public void setUp() {
-    }
-    
-    @After
-    public void tearDown() {
-    }
-
-    
-
-    /**
-     * Test of area method, of class Rectangulo.
-     */
    @Test
     public void testCalcularPerimetro() {
         System.out.println("CalcularPerimetro");
@@ -124,8 +86,6 @@ public class RectanguloTest {
       
     }
 
-    
-     
     @Test
     public void testCalcularArea() {
         System.out.println("CalcularArea");
