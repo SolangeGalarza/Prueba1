@@ -72,3 +72,71 @@ public class CuadradoTest {
         assertEquals(AreaEsp,AreaTri,0.0);
     }
 }
+
+package figuras;
+
+import org.junit.After;
+import org.junit.AfterClass;
+import org.junit.Before;
+import org.junit.BeforeClass;
+import org.junit.Test;
+import static org.junit.Assert.*;
+
+/**
+ *
+ * @author Rectangulo
+ */
+public class RectanguloTest {
+    
+    public RectanguloTest() {
+    }
+    
+    @BeforeClass
+    public static void setUpClass() {
+    }
+    
+    @AfterClass
+    public static void tearDownClass() {
+    }
+    
+    @Before
+    public void setUp() {
+    }
+    
+    @After
+    public void tearDown() {
+    }
+
+    
+
+    /**
+     * Test of area method, of class Rectangulo.
+     */
+   @Test
+    public void testCalcularPerimetro() {
+        System.out.println("CalcularPerimetro");
+        Rectangulo.CalcularPerimetro();
+        double base=2;
+        double altura=4;
+        double expResult =12 ;
+        double perimetro = base+base+altura+altura;
+        assertEquals(expResult, 12, 0.0);
+      
+    }
+
+    
+     
+    @Test
+    public void testCalcularArea() {
+        System.out.println("CalcularArea");
+        Rectangulo.CalcularArea();
+        double base = 2;
+        double altura = 4;
+        double expResult =8 ;
+        double area = base*altura;
+        assertEquals(expResult, 8 , 0.0);
+       
+    }
+
+    
+}
