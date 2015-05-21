@@ -59,6 +59,18 @@ public class CuadradoTest {
         assertEquals(perimetroEsperado,perimetro,0.0);
         
     }
+    public void TestPerimetroTriangulo(){
+        double perimetroEsp,perimetroTri;
+        perimetro=90.00;
+        perimetroEsp=Triangulo.Perimetro(15,20,25);
+        assertEquals(perimetroEsp,perimetroTri,0.0);
+    }
+    public void TestAreaTriangulo(){
+        double AreaEsp,AreaTri;
+        AreaTri=120;
+        AreaEsp=Triagulo.Area(6,5);
+        assertEquals(AreaEsp,AreaTri,0.0);
+    }
 }
 
 package figuras;
@@ -100,13 +112,31 @@ public class RectanguloTest {
     /**
      * Test of area method, of class Rectangulo.
      */
-    @Test
-    public void testArea() {
-        System.out.println("area y perimetro");
-        Rectangulo instance = null;
-        instance.area();
-        // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
+   @Test
+    public void testCalcularPerimetro() {
+        System.out.println("CalcularPerimetro");
+        Rectangulo.CalcularPerimetro();
+        double base=2;
+        double altura=4;
+        double expResult =12 ;
+        double perimetro = base+base+altura+altura;
+        assertEquals(expResult, 12, 0.0);
+      
     }
+
+    
+     
+    @Test
+    public void testCalcularArea() {
+        System.out.println("CalcularArea");
+        Rectangulo.CalcularArea();
+        double base = 2;
+        double altura = 4;
+        double expResult =8 ;
+        double area = base*altura;
+        assertEquals(expResult, 8 , 0.0);
+       
+    }
+
     
 }
