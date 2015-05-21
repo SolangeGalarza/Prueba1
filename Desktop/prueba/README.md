@@ -1,3 +1,5 @@
+cout<<Vinicio Guachamin<<endl;
+--------------------------------------------------
 Jefferson Morocho
 PACHECO CRISTIAN
 <<<<<<< HEAD
