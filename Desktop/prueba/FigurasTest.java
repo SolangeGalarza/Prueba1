@@ -102,7 +102,7 @@ public class RectanguloTest {
      */
     @Test
     public void testArea() {
-        System.out.println("area");
+        System.out.println("area y perimetro");
         Rectangulo instance = null;
         instance.area();
         // TODO review the generated test code and remove the default call to fail.
