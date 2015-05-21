@@ -59,18 +59,25 @@ public class CuadradoTest {
         assertEquals(perimetroEsperado,perimetro,0.0);
         
     }
+    /**
+     * Test of Perimetro method, of class Triangulo.
+     */
+    @Test
     public void TestPerimetroTriangulo(){
         double perimetroEsp,perimetroTri;
         perimetro=90.00;
         perimetroEsp=Triangulo.Perimetro(15,20,25);
         assertEquals(perimetroEsp,perimetroTri,0.0);
     }
+    @Test
     public void TestAreaTriangulo(){
         double AreaEsp,AreaTri;
         AreaTri=120;
         AreaEsp=Triagulo.Area(6,5);
         assertEquals(AreaEsp,AreaTri,0.0);
     }
+    
+    
    @Test
     public void testCalcularPerimetroRectangulo() {
         System.out.println("CalcularPerimetro");
