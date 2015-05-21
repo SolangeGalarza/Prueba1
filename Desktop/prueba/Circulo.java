@@ -32,7 +32,8 @@ public class Circulo extends Figuras{
             perimetro= 2*radio*radio;
             
         }
-        return perimetro;    
+        return perimetro;   
+    } 
     
     }
     public void Imprimir ()
