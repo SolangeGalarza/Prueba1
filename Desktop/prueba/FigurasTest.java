@@ -75,7 +75,7 @@ public class CuadradoTest {
 
 
    @Test
-    public void testCalcularPerimetro() {
+    public void testCalcularPerimetroRectangulo() {
         System.out.println("CalcularPerimetro");
         Rectangulo.CalcularPerimetro();
         double base=2;
@@ -87,7 +87,7 @@ public class CuadradoTest {
     }
 
     @Test
-    public void testCalcularArea() {
+    public void testCalcularAreaRectangulo() {
         System.out.println("CalcularArea");
         Rectangulo.CalcularArea();
         double base = 2;
