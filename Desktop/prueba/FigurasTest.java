@@ -116,6 +116,16 @@ public class FigurasTest {
         assertEquals(expResult, 8 , 0.0);
        
     }
-
+@Test
+    public void testPerimetro() {
+       double perimetro=Circulo.calcularPerimetro(40);
+         assertEquals(251.3304,perimetro,0);
+    }
+    
+     @Test
+    public void testarea() {
+       double area=Circulo.calcularArea(80);
+         assertEquals(12800,area,0);
+    }
     
 }
