@@ -23,6 +23,14 @@ public class Circulo extends Figuras{
         return perimetro;    
     
     }
+    public void Imprimir ()
+    {
+        System.out.println( "El Tipo de Figura es :" + tipoFigura ); 
+        System.out.println( "EL Area es :" + area );
+        System.out.println( "El Perimetro es :" + perimetro ); 
+        
+    
+    }
 
    
     
