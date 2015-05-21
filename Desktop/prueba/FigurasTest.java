@@ -71,9 +71,6 @@ public class CuadradoTest {
         AreaEsp=Triagulo.Area(6,5);
         assertEquals(AreaEsp,AreaTri,0.0);
     }
-}
-
-
    @Test
     public void testCalcularPerimetroRectangulo() {
         System.out.println("CalcularPerimetro");
