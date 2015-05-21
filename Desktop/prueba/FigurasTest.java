@@ -16,9 +16,9 @@ import static org.junit.Assert.*;
  *
  * @author Usuario
  */
-public class CuadradoTest {
+public class FigurasTest {
     
-    public CuadradoTest() {
+    public FigurasTest() {
     }
     
     @BeforeClass
@@ -41,7 +41,7 @@ public class CuadradoTest {
      * Test of Perimetro method, of class Cuadrado.
      */
     @Test 
-    public void TestArea()
+    public void TestAreaCuadrado()
     {
         double areaEsperada,area;
         areaEsperada=100;
@@ -51,67 +51,30 @@ public class CuadradoTest {
     }
     
     @Test
-    public void TestPerimetro()
+    public void TestPerimetroCuadrado()
     {
         double perimetroEsperado,perimetro;
         perimetro=40;
         perimetroEsperado=Cuadrado.Perimetro(10, 10, 10,10);
-        assertEquals(perimetroEsperado,perimetro,0.0);
-        
+        assertEquals(perimetroEsperado,perimetro,0.0);   
     }
+    
+    @Test
     public void TestPerimetroTriangulo(){
         double perimetroEsp,perimetroTri;
         perimetro=90.00;
         perimetroEsp=Triangulo.Perimetro(15,20,25);
         assertEquals(perimetroEsp,perimetroTri,0.0);
     }
+    
+    @Test
     public void TestAreaTriangulo(){
         double AreaEsp,AreaTri;
         AreaTri=120;
         AreaEsp=Triagulo.Area(6,5);
         assertEquals(AreaEsp,AreaTri,0.0);
     }
-}
-
-package figuras;
-
-import org.junit.After;
-import org.junit.AfterClass;
-import org.junit.Before;
-import org.junit.BeforeClass;
-import org.junit.Test;
-import static org.junit.Assert.*;
-
-/**
- *
- * @author Rectangulo
- */
-public class RectanguloTest {
     
-    public RectanguloTest() {
-    }
-    
-    @BeforeClass
-    public static void setUpClass() {
-    }
-    
-    @AfterClass
-    public static void tearDownClass() {
-    }
-    
-    @Before
-    public void setUp() {
-    }
-    
-    @After
-    public void tearDown() {
-    }
-
-    
-
-    /**
-     * Test of area method, of class Rectangulo.
-     */
    @Test
     public void testCalcularPerimetro() {
         System.out.println("CalcularPerimetro");
@@ -122,9 +85,7 @@ public class RectanguloTest {
         double perimetro = base+base+altura+altura;
         assertEquals(expResult, 12, 0.0);
       
-    }
-
-    
+    }    
      
     @Test
     public void testCalcularArea() {
