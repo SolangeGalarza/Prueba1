@@ -20,6 +20,18 @@ public class Circulo extends Figuras{
     
      public static double  calcularPerimetro( double radio){
         double perimetro= 2*radio*radio;
+        if (perimetro<150)
+        {
+            System.out.println("El perimetro no puede ser calculado");
+            perimetro=0;
+
+            
+        }
+        else
+        {
+            perimetro= 2*radio*radio;
+            
+        }
         return perimetro;    
     
     }
