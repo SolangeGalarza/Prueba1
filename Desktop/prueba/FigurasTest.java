@@ -58,7 +58,13 @@ public class FigurasTest {
         perimetroEsperado=Cuadrado.Perimetro(10, 10, 10,10);
         assertEquals(perimetroEsperado,perimetro,0.0);   
     }
+<<<<<<< HEAD
     
+=======
+    /**
+     * Test of Perimetro method, of class Triangulo.
+     */
+>>>>>>> origin/master
     @Test
     public void TestPerimetroTriangulo(){
         double perimetroEsp,perimetroTri;
@@ -66,7 +72,10 @@ public class FigurasTest {
         perimetroEsp=Triangulo.Perimetro(15,20,25);
         assertEquals(perimetroEsp,perimetroTri,0.0);
     }
+<<<<<<< HEAD
     
+=======
+>>>>>>> origin/master
     @Test
     public void TestAreaTriangulo(){
         double AreaEsp,AreaTri;
@@ -74,9 +83,13 @@ public class FigurasTest {
         AreaEsp=Triagulo.Area(6,5);
         assertEquals(AreaEsp,AreaTri,0.0);
     }
+<<<<<<< HEAD
+=======
+    
+>>>>>>> origin/master
     
    @Test
-    public void testCalcularPerimetro() {
+    public void testCalcularPerimetroRectangulo() {
         System.out.println("CalcularPerimetro");
         Rectangulo.CalcularPerimetro();
         double base=2;
@@ -85,10 +98,15 @@ public class FigurasTest {
         double perimetro = base+base+altura+altura;
         assertEquals(expResult, 12, 0.0);
       
+<<<<<<< HEAD
     }    
      
+=======
+    }
+
+>>>>>>> origin/master
     @Test
-    public void testCalcularArea() {
+    public void testCalcularAreaRectangulo() {
         System.out.println("CalcularArea");
         Rectangulo.CalcularArea();
         double base = 2;
